@@ -312,3 +312,7 @@ label.agree {
 #footer p {
   color: #615a5a;
 }
+.wrapper .dynamic-text {
+    margin-bottom: 5px;
+    margin-left: -20px;
+}
