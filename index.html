@@ -3,86 +3,104 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
-  <title>Form</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://kit.fontawesome.com/9bb8901042.js" crossorigin="anonymous"></script>
+	<meta charset="utf-8">
+	<title>Form</title>
+	<link rel="stylesheet" href="styles.css">
+
+	<script type="text/javascript">
+		function validate() {
+			var fullName = document.getElementById("fname");
+
+			if(fullName.value.length <= 2) {
+				document.getElementById("msgName").style.visibility="visible";
+				fullName.style.border = "solid 3px red";
+				return false;
+			}
+			else {
+				return true;
+			}
+		}
+	</script>
 </head>
 
 <body>
 
-  <div class="mainscreen">
+	<div class="mainscreen">
 
-  		<!-- Creating top hero text part -->
-  		<div class="toppart">
-  			<div class="herotext">
-          <h1> <img src="My.jpg" alt="Logo" class="logo"></h1>
-		  <div class="wrapper">
-			<div class="static-text">I'm</div>
-				<ul class="dynamic-text">
-					<li><span>OM PANDEY</span></li>
-				</ul>
+		<!-- Creating top hero text part -->
+		<div class="toppart">
+			<div class="herotext">
+				<h1> <img src="My.jpg" alt="Logo" class="logo"></h1>
+				<div class="wrapper">
+					<div class="static-text">I'm</div>
+					<ul class="dynamic-text">
+						<li><span>OM PANDEY</span></li>
+					</ul>
+				</div>
+				<p>"Get updates on Web Development And Machine Learning directly to your mail" <br>
+					Easy way to get updated👊!!</p>
 			</div>
-			<p>"Get updates on Web Development And Machine Learning directly to your mail" <br>
-				Easy way to get updated👊!!</p>
-		  </div>
-        </div>
-		
+		</div>
+
 	</div>
 
-  		<!-- Creating bottom part form img and form -->
-  		<div class="bottompart">
-  			<!-- Image Part -->
-  			<div class="imgpart">
-  				<img src="Web-Development.jpg" class="heroimg" alt="">
-  			</div>
+	<!-- Creating bottom part form img and form -->
+	<div class="bottompart">
+		<!-- Image Part -->
+		<div class="imgpart">
+			<img src="Web-Development.jpg" class="heroimg" alt="">
+		</div>
 
-  			<!-- Form Part -->
-  			<div class="formpart">
-  				<form>
-  					<h2>Signup for Updates🤗</h2>
-  					<!-- For Full Name -->
-  					<label for="name">Full Name</label>
-  					<input class="inputbox" name="name" type="text" class="name" placeholder="Please enter your full name" autocomplete="off">
+		<!-- Form Part -->
+		<div class="formpart">
+			<form onclick="return validate()">
+					<h2>Signup for Updates🤗</h2>
+					<!-- For Full Name -->
+					<label for="name">Full Name</label>
+					<input class="inputbox" id="fname" name="name" type="text" class="name" placeholder="Please enter your full name"
+					autocomplete="off" required>
+					<small id="msgName" style="visibility: hidden; color: red; position: absolute; top: 200px; right: 240px;">Full Name should consist of more than 2 characters</small>
 
-  					<!-- For user email to receive notes -->
-  					<label for="email">Email</label>
-  					<input class="inputbox" type="email" class="email" name="email" placeholder="Please enter your email" autocomplete="off">
+					<!-- For user email to receive notes -->
+					<label for="email" style="margin-top: 0.5cm;">Email</label>
+					<input class="inputbox" id="email" type="email" class="email" name="email" placeholder="Please enter your email"
+					autocomplete="off" required>
 
-  					<!-- For selecting course which email he wantss -->
-  					<label for="course">Select Subject</label>
-  					<div class="options">
-  						<div class="eachoption">
-  							<input type="checkbox" checkbox="off" id="webDevelopment">
-  							<label for="webDevelopment"><span>Web Development</span></label>
-  						</div>
-  						<div class="eachoption">
-  							<input type="checkbox" checkbox="off" id="machineLearing">
-  							<label for="machineLearing"><span>Machine Learing</span></label>
-  						</div>
-  					</div>
-
-
-  					<!-- For Agree line and checkbox -->
-  					<input type="checkbox" class="agree" checkbox="off" id="agree">
-  					<label class="agree" for="agree">I want to receive promotion mails and News about Web development and Machine Learning</label>
-
-  					<!-- For Privacy Policy Line -->
-  										<label class="privacy_policy">By clicking the submit button, you agree to our <span>Terms & Conditions</span> and <span>Privacy Policy</span>.</label>
+					<!-- For selecting course which email he wantss -->
+					<label for="course" style="margin-top: 0.5cm;">Select Subject</label>
+					<div class="options">
+						<div class="eachoption">
+						<input type="checkbox" checkbox="off" id="webDevelopment">
+						<label for="webDevelopment"><span>Web Development</span></label>
+						</div>
+						<div class="eachoption">
+						<input type="checkbox" checkbox="off" id="machineLearing">
+						<label for="machineLearing"><span>Machine Learing</span></label>
+						</div>
+					</div>
 
 
-  					<!-- For Submit Button-->
-  					<button class="submitbtn">Submit</button>
+					<!-- For Agree line and checkbox -->
+					<input type="checkbox" class="agree" checkbox="off" id="agree">
+					<label class="agree" for="agree">I want to receive promotion mails and News about Web development and
+						Machine Learning</label>
 
-  				</form>
-  			</div>
-  		</div>
-  	</div>
+					<!-- For Privacy Policy Line -->
+					<label class="privacy_policy">By clicking the submit button, you agree to our <span>Terms &
+							Conditions</span> and <span>Privacy Policy</span>.</label>
 
 
-      <footer id="footer">
-	      
-      <!-- entering username of the social media accounts from which the user may contact-- >	      
+					<!-- For Submit Button-->
+					<button type="submit">Submit</button>
+			</form>
+		</div>
+	</div>
+	</div>
+
+
+	<footer id="footer">
+
+		<!-- entering username of the social media accounts from which the user may contact-- >	      
 	      
       <a href="https://github.com/pandeyom331"><i class="git fab fa-github fa-2x "></i></a>
       <a href="https://www.facebook.com/profile.php?id=100004398076666"><i class="git fab fa-facebook-f fa-2x"></i></a>
