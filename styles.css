@@ -114,7 +114,7 @@ and other is bottom form part*/
   align-items: center;
   justify-content: center;
   flex-direction: row;
-
+  padding-left :2em;
   background-color: #fff;
   position: relative;
   top: -7rem;
@@ -133,6 +133,7 @@ and another is form part*/
 .imgpart {
   background: #70a1ff;
   width: 25rem;
+  
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -142,6 +143,7 @@ and another is form part*/
 
 .heroimg {
   width: 18rem;
+  
   height: 18rem;
   border-radius: 100%;
 }
