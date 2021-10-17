@@ -38,7 +38,7 @@ and other is bottom form part*/
   box-shadow: 4px 3px 20px #3535358c;
   border-radius: 1rem;
   padding: 2rem;
-  margin-top: 1rem;
+  margin-top: 6rem;
   height: 300px;
 }
 
@@ -138,6 +138,7 @@ and another is form part*/
   justify-content: center;
   border-top-left-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
+  padding: 190px 30px;
 }
 
 .heroimg {
@@ -307,6 +308,7 @@ label.agree {
   padding: 3% 6%;
   text-align: center;
   background-color: #fff;
+  font-size: 14px;
 }
 
 .git {
