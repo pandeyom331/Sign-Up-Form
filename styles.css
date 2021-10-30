@@ -34,7 +34,7 @@ and other is bottom form part*/
 
 .herotext {
   /* background: #3a2f2f73; */
-  background: peru;
+  background:#569db1;
   box-shadow: 4px 3px 20px #3535358c;
   border-radius: 1rem;
   padding: 2rem;
@@ -60,7 +60,7 @@ and other is bottom form part*/
   color: #eaeaea;
 }
 .dynamic-text li span {
-  position: relative;
+  position: absolute;
 }
 .dynamic-text li span::after {
   content: "";
@@ -69,7 +69,7 @@ and other is bottom form part*/
   height: 100%;
   width: 100%;
 
-  background: peru;
+  background: #132C33;
   border-left: 2px solid #eaeaea;
   animation: typing 1.5s steps(9) infinite;
 }
